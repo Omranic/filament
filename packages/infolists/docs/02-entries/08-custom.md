@@ -18,7 +18,7 @@ You may render a custom view for an entry using the `view()` method:
 use Filament\Infolists\Components\ViewEntry;
 
 ViewEntry::make('status')
-    ->view('filament.infolists.entries.status-switcher')
+    ->view('filament-infolists::entries.status-switcher')
 ```
 
 This assumes that you have a `resources/views/filament/infolists/entries/status-switcher.blade.php` file.
@@ -42,7 +42,7 @@ use Filament\Infolists\Components\Entry;
 
 class StatusSwitcher extends Entry
 {
-    protected string $view = 'filament.infolists.entries.status-switcher';
+    protected string $view = 'filament-infolists::entries.status-switcher';
 }
 ```
 

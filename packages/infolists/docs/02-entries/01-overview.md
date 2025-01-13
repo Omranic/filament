@@ -22,9 +22,9 @@ public function infolist(Schema $infolist): Schema
 If you're inside a [panel builder resource](../../panels/resources), the `infolist()` method should be static:
 
 ```php
-use Filament\Infolists\Infolist;
+use Filament\Schemas\Schema;
 
-public static function infolist(Infolist $infolist): Infolist
+public static function infolist(Schema $infolist): Schema
 {
     return $infolist
         ->schema([

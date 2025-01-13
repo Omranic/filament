@@ -89,7 +89,7 @@ Wizard\Step::make('Order')
 You may customize the [icon](#setting-up-step-icons) of a completed step using the `completedIcon()` method:
 
 ```php
-use Filament\Forms\Components\Wizard;
+use Filament\Schemas\Components\Wizard;
 
 Wizard\Step::make('Order')
     ->completedIcon('heroicon-m-hand-thumb-up')

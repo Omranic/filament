@@ -215,7 +215,7 @@ test('title is disabled', function () {
 If you need to check if a particular layout component exists rather than a field, you may use `assertFormComponentExists()`.  As layout components do not have names, this method uses the `key()` provided by the developer:
 
 ```php
-use Filament\Forms\Components\Section;
+use Filament\Schemas\Components\Section;
 
 Section::make('Comments')
     ->key('comments-section')
@@ -247,7 +247,7 @@ it('does not have a conditional component', function () {
 To check if the component exists and passes a given truth test, you can pass a function to the second argument of `assertFormComponentExists()`, returning true or false if the component passes the test or not:
 
 ```php
-use Filament\Forms\Components\Component;
+use Filament\Schemas\Components\Component;
 
 use function Pest\Livewire\livewire;
 
@@ -265,7 +265,7 @@ test('comments section has heading', function () {
 If you want more informative test results, you can embed an assertion within your truth test callback:
 
 ```php
-use Filament\Forms\Components\Component;
+use Filament\Schemas\Components\Component;
 use Illuminate\Testing\Assert;
 
 use function Pest\Livewire\livewire;

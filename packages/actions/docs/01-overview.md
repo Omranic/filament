@@ -81,7 +81,7 @@ If you're looking to add a bulk action to a table in your app, [visit this page]
 
 Form components can contain actions. A good use case for actions inside form components would be with a select field, and an action button to "create" a new record. When you click on the button, a modal opens to collect the new record's data. When the modal form is submitted, the new record is created in the database, and the select field is filled with the newly created record. Fortunately, [this case is handled for you out of the box](../forms/fields/select#creating-new-records), but it's a good example of how form component actions can be powerful.
 
-These actions use the `Filament\Forms\Components\Actions\Action` class. They can open a modal if you choose, or even just a URL.
+These actions use the `Filament\Actions\Action` class. They can open a modal if you choose, or even just a URL.
 
 If you're looking to add an action to a form component in your app, [visit this page](../forms/actions) in the docs.
 
@@ -95,7 +95,7 @@ If you're looking to add an action to an infolist component in your app, [visit 
 
 When you [send notifications](../notifications/sending-notifications), you can add actions. These buttons are rendered below the content of the notification. For example, a notification to alert the user that they have a new message should contain an action button that opens the conversation thread.
 
-These actions use the `Filament\Notifications\Actions\Action` class. They aren't able to open modals, but they can open a URL or dispatch a Livewire event.
+These actions use the `Filament\Actions\Action` class. They aren't able to open modals, but they can open a URL or dispatch a Livewire event.
 
 If you're looking to add an action to a notification in your app, [visit this page](../notifications/sending-notifications#adding-actions-to-notifications) in the docs.
 
@@ -103,7 +103,7 @@ If you're looking to add an action to a notification in your app, [visit this pa
 
 In the Panel Builder, there is a [global search](../panels/resources/global-search) field that allows you to search all resources in your app from one place. When you click on a search result, it leads you to the resource page for that record. However, you may add additional actions below each global search result. For example, you may want both "Edit" and "View" options for a client search result, so the user can quickly edit their profile as well as view it in read-only mode.
 
-These actions use the `Filament\GlobalSearch\Actions\Action` class. They aren't able to open modals, but they can open a URL or dispatch a Livewire event.
+These actions use the `Filament\Actions\Action` class. They aren't able to open modals, but they can open a URL or dispatch a Livewire event.
 
 If you're looking to add an action to a global search result in a panel, [visit this page](../panels/resources/global-search#adding-actions-to-global-search-results) in the docs.
 

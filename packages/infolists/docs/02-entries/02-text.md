@@ -98,9 +98,9 @@ TextEntry::make('stock')
 Alternatively, you can set the default locale used across your app using the `Infolist::$defaultNumberLocale` method in the `boot()` method of a service provider:
 
 ```php
-use Filament\Infolists\Infolist;
+use Filament\Schemas\Schema;
 
-Infolist::$defaultNumberLocale = 'nl';
+Schema::$defaultNumberLocale = 'nl';
 ```
 
 ## Currency formatting
@@ -135,9 +135,9 @@ TextEntry::make('price')
 Alternatively, you can set the default locale used across your app using the `Infolist::$defaultNumberLocale` method in the `boot()` method of a service provider:
 
 ```php
-use Filament\Infolists\Infolist;
+use Filament\Schemas\Schema;
 
-Infolist::$defaultNumberLocale = 'nl';
+Schema::$defaultNumberLocale = 'nl';
 ```
 
 ## Limiting text length
@@ -287,7 +287,7 @@ use Illuminate\Contracts\View\View;
 
 TextEntry::make('description')
     ->formatStateUsing(fn (string $state): View => view(
-        'filament.infolists.components.description-entry-content',
+        'filament-infolists::components.description-entry-content',
         ['state' => $state],
     ))
 ```
